@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:defaultValue="@bool/pref_show_bass_default"
+        android:summaryOff="@string/pref_show_false"
+        android:summaryOn="@string/pref_show_true"
+        android:title="@string/pref_show_bass_label"
+        android:key="@string/pref_show_bass_key"/>
+
+    <CheckBoxPreference
+        android:defaultValue="@bool/pref_show_mid_range_default"
+        android:summaryOff="@string/pref_show_false"
+        android:summaryOn="@string/pref_show_true"
+        android:title="@string/pref_show_mid_range_label"
+        android:key="@string/pref_show_mid_range_key"/>
+
+    <CheckBoxPreference
+        android:defaultValue="@bool/pref_show_treple_default"
+        android:summaryOff="@string/pref_show_false"
+        android:summaryOn="@string/pref_show_true"
+        android:title="@string/pref_show_treple_label"
+        android:key="@string/pref_show_treble_key"/>
+
+    <ListPreference
+        android:defaultValue="@string/pref_color_red_value"
+        android:entries="@array/pref_color_option_label"
+        android:entryValues="@array/pref_color_option_values"
+        android:key="@string/pref_color_key"
+        android:title="@string/pref_color_label"/>
+</PreferenceScreen>
